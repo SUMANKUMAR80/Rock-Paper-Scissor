@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="games">
+      <div class="heading">
+        <h4>Rock</h4>
+        <h4>Paper</h4>
+        <h4>Cissors</h4>
+      </div>
+      <div class="choices">
+        <div class="choice" id="rock">
+          <img src="./image/rock.png" />
+        </div>
+        <div class="choice" id="paper">
+          <img src="./image/paper.png" />
+        </div>
+        <div class="choice" id="scissors">
+          <img src="./image/scissors.png" />
+        </div>
+      </div>
+  
+      <div class="score-board">
+        <div class="score">
+          <p id="user-score">0</p>
+          <p>You</p>
+        </div>
+        <div class="score">
+          <p id="comp-score">0</p>
+          <p>Comp</p>
+        </div>
+      </div>
+  
+      <div class="msg-container">
+        <p id="msg">Play your move</p>
+      </div>
+    </div>
+
+    <div class="rules">
+      <h2>Here are some rules for the game of rock, paper, scissors:</h2>
+      <h2>Hands Signals</h2>
+      <ul>
+        <li><b>Rock:</b> A closed fist</li>
+        <li><b>Paper:</b> A flat hand with the fingers and thumb extended, and the palm facing down</li>
+        <li><b>Scissors:</b> A fist with the index and middle fingers fully extended</li>
+      </ul>
+      <h2>Winning combinations</h2>
+      <p>Rock beats scissors, scissors beat paper, and paper beats rock</p>
+      <h2>Ties</h2>
+      <p>If both players choose the same hand signal, it's a tie and play continues until there's a winner </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex; /* Creates a side-by-side layout */
+    justify-content: space-between; /* Space between game and rules sections */
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title */
+  h1 {
+    position: absolute; /* Ensures title doesn't interfere with flex layout */
+    top: 0;
+    width: 100%;
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Games Section */
+  .games {
+    flex: 0 0 60%; /* Takes up 60% of the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem; /* Account for the header space */
+  }
+  
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+  
+  h4 {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+  
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+  }
+  
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  .msg-container {
+    margin-top: 5rem;
+  }
+  
+  #msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  /* Rules Section */
+  .rules {
+    flex: 0 0 35%; /* Takes up 35% of the width */
+    margin-top: 6rem; /* Aligns the top of the rules section */
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #e97210;
+    border-radius: 10px;
+    height: 55%;
+    background-color: #f4f4f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rules h2 {
+    color: #081b31;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .rules ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .rules li {
+    margin: 5px 0;
+  }
+  
+  .rules p {
+    color: #333;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  
